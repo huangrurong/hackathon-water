@@ -1,14 +1,14 @@
 {
-  "name": "hackathon-wind",
+  "name": "hackathon-water",
   "description": "A boiler-plate setup for API servers with Koa",
   "version": "0.0.1",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/changev/hackathon-wind.git"
+    "url": "https://github.com/changev/hackathon-water.git"
   },
   "bugs": {
-    "url": "https://github.com/changev/hackathon-wind/issues"
+    "url": "https://github.com/changev/hackathon-water/issues"
   },
   "engines": {
     "node": ">= 8"
@@ -24,8 +24,8 @@
     "test:watch": "cross-env PROJECT_ENV=testing jest --watch",
     "lint": "eslint .",
     "raml": "raml2html -i doc/api/api.raml -o api.html",
-    "daemon:start": "forever --uid hackathon-wind -a -c 'node --use-strict' start ./src/app.js",
-    "daemon:stop": "forever stop hackathon-wind || true"
+    "daemon:start": "forever --uid hackathon-water -a -c 'node --use-strict' start ./src/app.js",
+    "daemon:stop": "forever stop hackathon-water || true"
   },
   "dependencies": {
     "debug": "^3.1.0",
